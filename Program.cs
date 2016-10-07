@@ -7,19 +7,41 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            string[] response = new string[10];
-
-            for(int i = 0; i < 10; i++)
+            do
             {
-                response[i] = Question();
-            }
+                int TotalCount = 0;
+                string[] response = new string[10];
 
-            Console.WriteLine();
+                for (int i = 0; i < 10; i++)
+                {
+                    response[i] = Question();
+                }
 
-            foreach(string i in response)
-            {
-                Console.WriteLine(i);
-            }
+                Console.WriteLine();
+
+                foreach (string i in response)
+                {
+                    int OptA = 0;
+                    int OptB = 0;
+                    int OptC = 0;
+
+                    if (i == "A" || "a")
+                    {
+                        OptA++;
+                    }
+                    else if (i == "B" || "b")
+                    {
+                        OptB++;
+                    }
+                    else if (i == "C" || "c")
+                    {
+                        OptC++;
+                    }
+                }
+
+                TotalCount++;
+
+
         }
 
         public static string Question()
