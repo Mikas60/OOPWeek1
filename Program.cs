@@ -39,8 +39,12 @@ namespace ConsoleApplication
                     }
                 }
 
+                Console.WriteLine("Number of people who want Vanilla: " + OptA);
+                Console.WriteLine("Number of people who want Strawberry: " + OptB);
+                Console.WriteLine("Number of people who want Chocolate: " + OptC);
                 TotalCount++;
 
+            } while (TotalCount <= 10 || OptA == 10 || OptB == 10 || OptC == 10);
 
         }
 
